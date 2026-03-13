@@ -11,3 +11,16 @@ test("test mean of two numbers", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test('test mean of five numbers', () => {
+    const numbers = [1, 2, 3, 4, 5];
+    const expected = 3;
+    const result = mean(numbers);
+    expect(result).toBe(expected);
+});
+
+test('test mean of no numbers', () => {
+    expect(() => {
+        mean([]);
+    }).toThrow("List is empty!"); 
+});
