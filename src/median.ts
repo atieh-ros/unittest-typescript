@@ -3,7 +3,6 @@ export function median(numbers: number[]): number {
         throw new Error("List is empty!");
     }
 
-    // ۱. مرتب‌سازی لیست (خیلی مهم!)
     const sorted = [...numbers].sort((a, b) => a - b);
     
     const middle = Math.floor(sorted.length / 2);
